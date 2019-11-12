@@ -73,6 +73,7 @@ void main() async {
       double dolar = double.parse(text);  
       brlController.text = (dolar * this.dolar).toStringAsFixed(2);
       eurController.text = (dolar * this.dolar / euro).toStringAsFixed(2);
+      btcController.text = (dolar * this.dolar / btc).toStringAsFixed(2);
     }
 
     void _euroChanged(String text){  
@@ -83,6 +84,7 @@ void main() async {
       double euro = double.parse(text);
       brlController.text = (euro * this.euro).toStringAsFixed(2);
       usdController.text = (euro * this.euro / dolar).toStringAsFixed(2);
+      btcController.text = (euro * this.euro / btc).toStringAsFixed(2);
     }
 
      void _btcChanged(String text){  
